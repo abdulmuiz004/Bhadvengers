@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b13">
+  <meta name="description" content="Introduce yourself to the Bhadvengers team. Share your name, hero identity, and a photo.">
+  <title>Join the team — Bhadvengers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Bhadvengers home">
+      <span class="brand-mark" aria-hidden="true"><span>B</span></span>
+      <span class="brand-name">BHAD<span>V</span>ENGERS</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span class="sr-only">Open navigation</span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="members.html">Members</a>
+      <a class="nav-link nav-join is-current" href="join.html" aria-current="page">Join Bhadvengers <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main class="join-main">
+    <section class="join-layout">
+      <div class="join-intro">
+        <p class="section-label"><span>YOUR ORIGIN STORY</span><span class="label-line"></span><span>BHAD / JOIN</span></p>
+        <h1>Every team<br>needs <span>your kind.</span></h1>
+        <p class="join-lead">Bring your own story. Pick your hero name, share a photo, and step into the Bhadvengers circle.</p>
+        <div class="join-note">
+          <span class="join-note-icon" aria-hidden="true">✳</span>
+          <p><strong>A note from the multiverse</strong><br>Your profile appears in the members page on this device. This demo saves submissions in this browser only — it does not upload photos to a public server.</p>
+        </div>
+        <div class="join-visual" aria-hidden="true">
+          <div class="join-orb join-orb-blue"></div>
+          <div class="join-orb join-orb-red"></div>
+          <span class="join-visual-word">YOUR<br>UNIVERSE<br>STARTS HERE</span>
+          <span class="join-visual-coord">BHAD / 004</span>
+        </div>
+      </div>
+      <form class="join-form" id="join-form">
+        <div class="form-heading">
+          <span class="form-index">01 — INTRODUCE YOURSELF</span>
+          <h2>Join the circle<span class="heading-dot">.</span></h2>
+        </div>
+        <label class="field-label" for="member-name">Your name <span>*</span></label>
+        <input class="text-input" id="member-name" name="name" type="text" autocomplete="name" maxlength="40" placeholder="How should we call you?" required>
+        <label class="field-label" for="member-alias">Hero name <span>*</span></label>
+        <input class="text-input" id="member-alias" name="alias" type="text" maxlength="40" placeholder="Your name in the field" required>
+        <label class="field-label" for="member-motto">What do you stand for? <span class="optional">(optional)</span></label>
+        <input class="text-input" id="member-motto" name="motto" type="text" maxlength="90" placeholder="A short line about your hero spirit">
+        <span class="field-label photo-label">Choose your photo <span>*</span></span>
+        <label class="upload-zone" for="member-photo">
+          <input class="sr-only" id="member-photo" name="photo" type="file" accept="image/jpeg,image/png,image/webp" required>
+          <span class="upload-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="5" y="7" width="30" height="26" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="14" cy="16" r="3" stroke="currentColor" stroke-width="1.5"/><path d="m7 29 9-9 6 6 5-5 7 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="upload-copy"><strong>Drop in your portrait</strong><span>or <span class="upload-browse">browse files</span> · JPG, PNG, WEBP · max 5 MB</span></span>
+          <img class="upload-preview" id="upload-preview" src="assets/bhadvengers-squad.jpg" alt="Selected member photo preview" hidden>
+          <span class="upload-check" aria-hidden="true">✓</span>
+        </label>
+        <p class="upload-filename" id="upload-filename" aria-live="polite">A clear photo makes a great first impression.</p>
+        <p class="form-status" id="form-status" aria-live="polite"></p>
+        <button class="button button-primary form-submit" type="submit">Add me to the roster <span aria-hidden="true">↗</span></button>
+        <p class="form-footnote">By joining, your profile is saved on this device and shown in its local roster.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html" aria-label="Bhadvengers home">
+      <span class="brand-mark" aria-hidden="true"><span>B</span></span>
+      <span class="brand-name">BHAD<span>V</span>ENGERS</span>
+    </a>
+    <p>Fan-made with courage, chaos &amp; a little bit of fire.</p>
+    <p class="footer-note">Bhadvengers is an independent fan community, not affiliated with Marvel, DC, or their respective rights holders.</p>
+    <span class="copyright">© <span data-year></span> BHADVENGERS</span>
+  </footer>
+</body>
+</html>

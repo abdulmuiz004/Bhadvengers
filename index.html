@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b13">
+  <meta name="description" content="Meet the Bhadvengers: a fan-made team fueled by fire, water, and a shared love of heroes.">
+  <title>Bhadvengers — One team. Two forces.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <!-- THESIS: A fan team's identity is a collision of two forces, not a row of generic hero cards. -->
+  <!-- OWN-WORLD: Ink-dark glass, a cold blue current, hot ember light, and a clean centered wordmark. -->
+  <!-- STORY: Visitors meet Bhadvengers, see the three member personas, and can join with a photo. -->
+  <!-- FIRST VIEWPORT: A split-energy circular emblem and centered BHADVENGERS wordmark lead the page; Join the team sits in the navigation and hero. -->
+  <!-- FORM: A cinematic single-page landing composition, translated into reusable home, roster, and join routes. -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Bhadvengers home">
+      <span class="brand-mark" aria-hidden="true"><span>B</span></span>
+      <span class="brand-name">BHAD<span>V</span>ENGERS</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span class="sr-only">Open navigation</span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a class="nav-link is-current" href="index.html" aria-current="page">Home</a>
+      <a class="nav-link" href="members.html">Members</a>
+      <a class="nav-link nav-join" href="join.html">Join Bhadvengers <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <div class="energy energy-water"></div>
+        <div class="energy energy-fire"></div>
+        <div class="hero-orbit orbit-outer"></div>
+        <div class="hero-orbit orbit-inner"></div>
+        <span class="spark spark-one"></span><span class="spark spark-two"></span><span class="spark spark-three"></span>
+      </div>
+      <div class="hero-copy">
+        <p class="hero-kicker"><span class="status-dot"></span> A fan-made team. An original bond.</p>
+        <h1>Two forces.<br><span>One team.</span></h1>
+        <p class="hero-description">Meet the Bhadvengers — where cool-headed purpose meets unstoppable fire, and every hero brings their own kind of courage.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="members.html">Meet the members <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#origin">Discover our story <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-emblem" aria-label="Bhadvengers">
+        <div class="emblem-ring ring-back"></div>
+        <div class="emblem-ring ring-front"></div>
+        <div class="emblem-core">
+          <span class="emblem-symbol" aria-hidden="true">B</span>
+          <span class="emblem-name">BHAD<br>VENGERS</span>
+          <span class="emblem-rule"></span>
+          <span class="emblem-caption">UNITED BY THE UNLIKELY</span>
+        </div>
+        <span class="emblem-label label-water">01 / CURRENT</span>
+        <span class="emblem-label label-fire">02 / FLAME</span>
+      </div>
+      <div class="hero-bottom">
+        <span>Independent fan community</span>
+        <span class="hero-bottom-line"></span>
+        <span>Built on courage, not capes</span>
+      </div>
+    </section>
+
+    <section class="intro-section section-wrap" id="origin">
+      <div class="section-heading">
+        <p class="section-label"><span>THE ORIGIN</span><span class="label-line"></span><span>01 — 03</span></p>
+        <h2>Not born heroes.<br><span>Just better together.</span></h2>
+      </div>
+      <div class="origin-layout">
+        <div class="origin-copy">
+          <p class="lead-copy">Bhadvengers began with a simple idea: you don't need the same powers to stand on the same side.</p>
+          <p>Three friends, three very different takes on heroism. One brings the plan. One faces the dark head-on. One reminds the team that responsibility comes with every gift. Together, they turn fandom into a team of their own.</p>
+          <a class="arrow-link" href="members.html">Get to know the team <span aria-hidden="true">⟶</span></a>
+        </div>
+        <figure class="origin-image">
+          <img src="assets/bhadvengers-origin.jpg" alt="Two Bhadvengers members standing together against a blue-and-fire-lit city">
+          <figcaption><span>THE FIRST ALLIANCE</span><span>BHAD / 001</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="forces-section">
+      <div class="section-wrap forces-inner">
+        <div class="forces-heading">
+          <p class="section-label"><span>OUR ELEMENTS</span><span class="label-line"></span><span>02 — 03</span></p>
+          <h2>Different by nature.<br><span>Aligned by choice.</span></h2>
+        </div>
+        <div class="force-columns">
+          <article class="force force-water">
+            <span class="force-index">01</span>
+            <div class="force-glyph" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none"><path d="M32 6C25 18 13 30 13 41a19 19 0 0 0 38 0C51 30 39 18 32 6Z" stroke="currentColor" stroke-width="2"/><path d="M23 43c1 6 5 9 10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Water finds a way.</h3>
+            <p>Patience, precision, and a clear head when the whole city is holding its breath.</p>
+            <span class="force-tag">STAY SHARP</span>
+          </article>
+          <div class="force-cross" aria-hidden="true"><span>×</span></div>
+          <article class="force force-fire">
+            <span class="force-index">02</span>
+            <div class="force-glyph" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none"><path d="M33 5c4 13-7 14-4 24 2-4 7-6 10-11 7 9 13 17 10 28a18 18 0 0 1-35-5c0-9 5-15 11-22 0 10 4 11 8 13-3-10 4-17 0-27Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M31 38c-4 5-5 7-5 11a7 7 0 0 0 14 0c0-3-2-6-4-9-1 3-3 4-5 5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Fire makes a stand.</h3>
+            <p>Grit, heart, and the spark that gets everyone moving when it matters most.</p>
+            <span class="force-tag">NEVER BACK DOWN</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-section section-wrap">
+      <div class="mission-art">
+        <img src="assets/mars-last-stand.jpg" alt="A Bhadvengers hero facing a blazing battlefield on Mars">
+        <span class="mission-art-label"><span class="status-dot"></span> FIELD NOTES / 003</span>
+      </div>
+      <div class="mission-copy">
+        <p class="section-label"><span>THE BHADVENGERS CODE</span><span class="label-line"></span><span>03 — 03</span></p>
+        <h2>When the world<br>gets loud, <span>show up.</span></h2>
+        <p>Our story isn't about saving the universe every day. It's about showing up for your people, standing for what you believe in, and making room for the next person beside you.</p>
+        <p>That is the code. The suits are just the beginning.</p>
+        <a class="arrow-link" href="join.html">Your place is here <span aria-hidden="true">⟶</span></a>
+      </div>
+    </section>
+
+    <section class="closing-banner">
+      <div class="closing-orb" aria-hidden="true"></div>
+      <div class="closing-content">
+        <p class="section-label"><span>THE ROSTER IS OPEN</span><span class="label-line"></span><span>BHAD / NOW</span></p>
+        <h2>Every great team<br>starts with <span>one more.</span></h2>
+        <a class="button button-primary" href="join.html">Join Bhadvengers <span aria-hidden="true">↗</span></a>
+      </div>
+      <span class="closing-coordinate">BHAD / EVERYWHERE</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html" aria-label="Bhadvengers home">
+      <span class="brand-mark" aria-hidden="true"><span>B</span></span>
+      <span class="brand-name">BHAD<span>V</span>ENGERS</span>
+    </a>
+    <p>Fan-made with courage, chaos &amp; a little bit of fire.</p>
+    <p class="footer-note">Bhadvengers is an independent fan community, not affiliated with Marvel, DC, or their respective rights holders.</p>
+    <span class="copyright">© <span data-year></span> BHADVENGERS</span>
+  </footer>
+</body>
+</html>
